@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "compass/utilities/sprites";
+@import "compass/utilities/general/clearfix";
+@import "compass/layout";
+
+// 样式变量参数
+
+// 内容宽度
+$base-main-width: 1000px;
+
+// 基础字体大小
+$base-default-font-size: 14px;
+
+//基础字体颜色
+$base_font_color: #999999;
+
+//基础字体颜色(标题)
+$base_font_color_title: #333333;
+
+//基础字体颜色-配色(标题)
+$base_font_color_match_title: #ffffff;
+
+//基础head头部背景色
+$base_head_Bg: #50c91f;
+
+//基础分割线颜色
+$base_line_color: #d2d2d2;
+
+
+
