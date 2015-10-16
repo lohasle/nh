@@ -26,11 +26,13 @@ ul {
 .pager-head {
   background: #ffffff;
   height: 30px;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #f0f0f0;
   .nav-head {
     @include container($main-width static);
     @include layout($susy float inside);
     @include clearfix;
+    height: 30px;
+    position: relative;
     .logo {
       color: #585858;
       margin-left: -8px;
@@ -42,22 +44,30 @@ ul {
         margin-top: 2px;
         vertical-align: middle;
       }
-      .logotxt{
+      .logotxt {
         font-size: 12px;
         margin-left: 10px;
         position: relative;
       }
     }
     .nav {
-      @include span(10 of 24 last);
-      margin-right: -126px;
       font-size: 12px;
+      height: 30px;
+      left: -38px;
+      top: 0;
+      position: absolute;
       li {
         list-style-type: none;
         padding: 0;
-        text-align: right;
+        text-align: center;
         float: left;
-        margin-left: 30px;
+        margin-right: 20px;
+        &.line{
+          font-size: 1.2em;
+          line-height: 30px;
+          color: #afafaf;
+          font-family: normal;
+        }
         > a {
           color: $base_main_font_color;
           line-height: 30px;
@@ -98,7 +108,7 @@ ul {
       @include container($main-width static);
       .nav1 {
         @include span(10 frist);
-        margin-left: -60px;
+        margin-left: -48px;
         li {
           @include yaHei;
           height: 80px;
@@ -110,8 +120,10 @@ ul {
             display: block;
             height: 80px;
             line-height: 80px;
-            &:hover, &.active {
-              background: $base_head_Bg;
+          }
+          &:hover, &.active {
+            background: $base_head_Bg;
+            a {
               color: #ffffff;
             }
           }
@@ -128,7 +140,7 @@ ul {
       top: 0;
       width: 100%;
       z-index: 9999;
-      border-bottom: 1px solid #CCCCCC;
+      border-bottom: 1px solid #f0f0f0;
     }
   }
   .pager-main {
@@ -154,32 +166,32 @@ ul {
             display: inline-block;
             padding: 0 10px;
             margin-right: 20px;
-            .icon{
+            .icon {
               height: 28px;
               width: 28px;
               display: inline-block;
               position: relative;
               top: 4px;
               left: -20px;
-              &.nianhui{
+              &.nianhui {
                 background: url("../images/icon_00.png") no-repeat center;
               }
-              &.liangdian{
+              &.liangdian {
                 background: url("../images/icon_01.png") no-repeat center;
               }
-              &.yicheng{
+              &.yicheng {
                 background: url("../images/icon_02.png") no-repeat center;
               }
-              &.jiabin{
+              &.jiabin {
                 background: url("../images/icon_03.png") no-repeat center;
               }
-              &.menpiao{
+              &.menpiao {
                 background: url("../images/icon_04.png") no-repeat center;
               }
-              &.jigou{
+              &.jigou {
                 background: url("../images/icon_05.png") no-repeat center;
               }
-              &.didian{
+              &.didian {
                 background: url("../images/icon_06.png") no-repeat center;
               }
 
@@ -188,7 +200,7 @@ ul {
         }
         .des-body {
           padding-left: 20px;
-          font-size: 20px;
+          font-size: 16px;
           line-height: 1.8rem;
           color: #606060;
           @include container;
@@ -196,6 +208,25 @@ ul {
             color: $base_head_Bg;
             font-weight: bold;
           }
+
+          .p-content{
+            font-family: "YaHei", "微软雅黑";
+            padding: 20px 0 30px 0;
+            line-height: 1.8;
+            img{
+              margin-top:10px;
+              margin-bottom:10px;
+              margin-left:auto;
+              margin-right:auto;
+              display: block;
+            }
+          }
+
+          p{
+            &.p0{margin: 0;padding: 0;padding: 5px 0}
+            &.p1{margin: 0;padding: 0;text-indent:2em;padding: 5px 0}
+          }
+
         }
         table.bm-table {
           &.first {
@@ -220,7 +251,7 @@ ul {
           }
         }
 
-        /** 嘉宾 **/
+        /** 嘉宾 1.0版 **/
         .social {
           padding: gutter();
           @include clearfix;
@@ -234,7 +265,11 @@ ul {
             img {
               @include border-radius(100%);
               vertical-align: middle;
-              &:hover{
+              transition: all 0.4s ease-in-out;
+              &:hover {
+                transition: all 0.4s ease-in-out;
+                transform: scale(1.18);
+                cursor: pointer;
               }
             }
             h4 {
@@ -256,6 +291,86 @@ ul {
             }
           }
         }
+
+        /** 嘉宾 卡片版 **/
+        .social2 {
+          padding: gutter();
+          @include clearfix;
+          margin-left: -70px;
+          margin-top: 20px;
+          .social-item {
+            list-style-type: none;
+            @include gallery(2 of 6);
+            margin-bottom: 40px;
+            text-align: left;
+            height: 410px;
+            .info {
+              height: 100%;
+              width: 320px;
+              position: relative;
+              background: #ffffff;
+              margin: auto;
+              &:hover {
+                box-shadow: 0 4px 10px #bbbbbb;
+              }
+              .info-sm {
+                padding: 20px 14px;
+                font-size: 20px;
+                width:100%;
+                height: 140px;
+                h4{
+                  color: #000;
+                  margin:0 0 16px 0;
+                  padding: 0;
+                }
+                h5{
+                  color: #585858;
+                  margin: 0;
+                  padding: 0;
+                  line-height: 1.5;
+                }
+              }
+              .info-dr {
+                background: url("../images/bg.png") center repeat;
+                font-size: 16px;
+                line-height: 1.8;
+                letter-spacing:2px;
+                color: #ffffff;
+                position: absolute;
+                width: 100%;
+                height: 0px;//360
+                bottom: 0px;
+                left: 0;
+                z-index: 999;
+                > span {
+                  text-align: left;
+                  text-overflow: ellipsis;
+                  padding: 20px;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  top:0;
+                  display: table;
+                  vertical-align: middle;
+                  >span{
+                    width: 100%;
+                    height: 100%;
+                    display: table-cell;
+                    vertical-align: middle;
+                  }
+                }
+              }
+              img {
+                vertical-align: middle;
+                height: 270px;
+                width: 100%;
+              }
+            }
+          }
+        }
+
         .tickets {
           padding: 20px 0;
           margin-left: -20px;
@@ -290,16 +405,16 @@ ul {
             @include gallery(4 of 24);
             margin-bottom: gutter(8);
             text-align: center;
-            img{
+            img {
               border: 1px solid #d2d2d2;
             }
           }
         }
-        .address-txt{
+        .address-txt {
           color: $base_head_Bg;
           font-size: 20px;
           margin-bottom: 40px;
-          >span{
+          > span {
             color: $base_main_font_color;
           }
         }
@@ -317,57 +432,59 @@ ul {
   }
 }
 
-.pager-foot{
+.pager-foot {
   color: #878787;
   background: #e1e5e8;
-  .one{
+  .one {
     background: #e1e5e8;
     height: 164px;
-    .content{
+    .content {
       @include container($main-width static);
       @include layout($susy float inside);
       position: relative;
       height: 164px;
-      .fl{
+      .fl {
         position: absolute;
         left: 0;
         top: 58px;
       }
-      .fr{
+      .fr {
         text-align: center;
         margin-top: 20px;
         position: absolute;
         right: 0;
         width: 550px;
         @include container;
-        .frl{
-          @include span(6 of 12 frist);
-          .qrcode-des{
+        .frl {
+          @include span(20 of 48 frist);
+          border-right:1px solid #C5C0C0 ;
+          .qrcode-des {
             font-size: 12px;
           }
         }
-        .frr{
+        .frr {
           text-align: left;
-          @include span(6 of 12 last);
+          @include span(28 of 48 last);
         }
-        p{
+        p {
           padding: 0;
           line-height: 1.5;
           margin: 0;
         }
-        h5{
+        h5 {
           padding: 0;
           font-size: 18px;
           color: #878787;
           margin: 0 0 22px;
         }
-        a{
+        a {
           color: #878787;
         }
       }
+
     }
   }
-  .two{
+  .two {
     text-align: center;
     background: #e1e5e8;
     height: 56px;
@@ -376,3 +493,32 @@ ul {
 }
 
 
+#backtotop {
+  height: 50px;
+  position: fixed;
+  bottom: 55px;
+  right: -60px;
+  z-index: 9999;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#backtotop.showme {
+  right: 12px;
+  -moz-transform: scale(1) rotate(-360deg) translate(0px);
+  -webkit-transform: scale(1) rotate(-360deg) translate(0px);
+  -o-transform: scale(1) rotate(-360deg) translate(0px);
+  transform: scale(1) rotate(-360deg) translate(0px);
+}
+
+#backtotop .bttbg {
+  width: 50px;
+  height: 50px;
+  background: url(../images/top_button.png) no-repeat 0 0;
+}
+
+#backtotop .bttbg:hover {
+  background-position: left bottom;
+}
