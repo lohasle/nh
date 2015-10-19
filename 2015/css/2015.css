@@ -135,7 +135,7 @@ ul { margin: 0; }
 .pager-content .pager-main { background: #f5f5f5; }
 .pager-content .pager-main .pager-main-container { padding-top: 40px; width: 1000px; margin-left: auto; margin-right: auto; }
 .pager-content .pager-main .pager-main-container:after { content: " "; display: block; clear: both; }
-.pager-content .pager-main .pager-main-container .des-item { font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", SimSun, "Arial Narrow"; /** 嘉宾 1.0版 **/ /** 嘉宾 卡片版 **/ /**合作伙伴**/ }
+.pager-content .pager-main .pager-main-container .des-item { font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", SimSun, "Arial Narrow"; /** 嘉宾 1.0版 **/ /** 嘉宾 卡片版  **/ /**合作伙伴**/ }
 .pager-content .pager-main .pager-main-container .des-item .des-title { background: #eaeaea; height: 50px; width: 100%; font-size: 26px; line-height: 50px; color: #585858; }
 .pager-content .pager-main .pager-main-container .des-item .des-title .icontxt { color: #ffffff; background: #1fcaa0; width: 180px; height: 50px; text-align: right; display: inline-block; padding: 0 10px; margin-right: 20px; }
 .pager-content .pager-main .pager-main-container .des-item .des-title .icontxt .icon { height: 28px; width: 28px; display: inline-block; position: relative; top: 4px; left: -20px; }
@@ -178,10 +178,10 @@ ul { margin: 0; }
 .pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info .info-sm { padding: 20px 14px; font-size: 20px; width: 100%; height: 140px; }
 .pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info .info-sm h4 { color: #000; margin: 0 0 16px 0; padding: 0; }
 .pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info .info-sm h5 { color: #585858; margin: 0; padding: 0; line-height: 1.5; }
-.pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info .info-dr { background: url("../images/bg.png") center repeat; font-size: 16px; line-height: 1.8; letter-spacing: 2px; color: #ffffff; position: absolute; width: 100%; height: 0px; bottom: 0px; left: 0; z-index: 999; }
-.pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info .info-dr > span { text-align: left; text-overflow: ellipsis; padding: 20px; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; top: 0; display: table; vertical-align: middle; }
-.pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info .info-dr > span > span { width: 100%; height: 100%; display: table-cell; vertical-align: middle; }
 .pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info img { vertical-align: middle; height: 270px; width: 100%; }
+.pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info-dr { background: url("../images/bg.png") center repeat; font-size: 16px; line-height: 1.8; letter-spacing: 2px; color: #ffffff; width: 100%; height: 0px; bottom: 0px; left: 0; z-index: 999; position: absolute; }
+.pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info-dr > span { text-align: left; text-overflow: ellipsis; padding: 20px; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; top: 0; display: table; vertical-align: middle; }
+.pager-content .pager-main .pager-main-container .des-item .social2 .social-item .info-dr > span > span { width: 100%; height: 100%; display: table-cell; vertical-align: middle; }
 .pager-content .pager-main .pager-main-container .des-item .tickets { padding: 20px 0; margin-left: -20px; height: 165px; position: relative; }
 .pager-content .pager-main .pager-main-container .des-item .tickets .price { position: absolute; left: 0; color: #000000; }
 .pager-content .pager-main .pager-main-container .des-item .tickets .price .c1 { color: #009fff; }

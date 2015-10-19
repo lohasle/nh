@@ -292,7 +292,7 @@ ul {
           }
         }
 
-        /** 嘉宾 卡片版 **/
+        /** 嘉宾 卡片版  **/
         .social2 {
           padding: gutter();
           @include clearfix;
@@ -330,42 +330,42 @@ ul {
                   line-height: 1.5;
                 }
               }
-              .info-dr {
-                background: url("../images/bg.png") center repeat;
-                font-size: 16px;
-                line-height: 1.8;
-                letter-spacing:2px;
-                color: #ffffff;
-                position: absolute;
-                width: 100%;
-                height: 0px;//360
-                bottom: 0px;
-                left: 0;
-                z-index: 999;
-                > span {
-                  text-align: left;
-                  text-overflow: ellipsis;
-                  padding: 20px;
-                  width: 100%;
-                  height: 100%;
-                  position: absolute;
-                  bottom: 0;
-                  left: 0;
-                  top:0;
-                  display: table;
-                  vertical-align: middle;
-                  >span{
-                    width: 100%;
-                    height: 100%;
-                    display: table-cell;
-                    vertical-align: middle;
-                  }
-                }
-              }
               img {
                 vertical-align: middle;
                 height: 270px;
                 width: 100%;
+              }
+            }
+            .info-dr {
+              background: url("../images/bg.png") center repeat;
+              font-size: 16px;
+              line-height: 1.8;
+              letter-spacing:2px;
+              color: #ffffff;
+              width: 100%;
+              height: 0px;//360
+              bottom: 0px;
+              left: 0;
+              z-index: 999;
+              position: absolute;
+              > span {
+                text-align: left;
+                text-overflow: ellipsis;
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                top:0;
+                display: table;
+                vertical-align: middle;
+                >span{
+                  width: 100%;
+                  height: 100%;
+                  display: table-cell;
+                  vertical-align: middle;
+                }
               }
             }
           }
