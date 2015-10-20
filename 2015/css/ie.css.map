@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": ";AAKA,UAAU,GACR,UAAU,EAAE,4CAA4C",
+"sources": ["../sass/ie.scss"],
 "names": [],
 "file": "ie.css"
 }

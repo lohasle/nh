@@ -7,6 +7,16 @@
     <meta name="description"
           content="“问道2015深圳互联网中医年会”以“互联网+中医创新”为主题，分享在互联网爆发背景下的中医药领域的变革与创新，探讨传统中医药服务、机构结合互联网的模式探索，挖掘互联网+中医药创业的机遇和挑战。">
     <link href="css/2015.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+
+    <!--[if IE 9 ]>
+    <link href="css/animate.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!--<![endif]-->
 </head>
 <body>
 <div class="pager-head">
@@ -23,8 +33,17 @@
     </div>
 </div>
 <div class="pager-content">
-<div class="silder-banner">
-    <div class="silder-item"><span></span><img src="images/banner_01.png"></div>
+<div class="silder-banner" id="container">
+    <div class="silder-container">
+        <div class="silder-item">
+            <div class="wd">
+                <img class="w1 hide" id="w1" src="images/banner-item.png" style="width:70px;height: 88px">
+                <img class="w2 hide" id="w2" src="images/banner-item2.png" style="width:92px;height: 72px ">
+                <img class="w3 hide" id="w3" src="images/banner-item3.png" style="width:185px;height: 206px ">
+            </div>
+        </div>
+    </div>
+
 </div>
 <div class="nav-full">
     <div class="nav-sub">
@@ -67,7 +86,7 @@
 
             <p class="p1">这一年，多家上市公司涉足中医药互联网：康美药业，量子高科。</p>
 
-            <p class="p1">这一年，多点执行书写中医时代变革大背景！</p>
+            <p class="p1">这一年，多点执业书写中医时代变革大背景！</p>
 
             <p class="p1">中医药产业，面对互联网，正在遭遇千年未有之大变局，作为行业从业者，我们该何去何从？</p>
 
@@ -84,7 +103,7 @@
             <p class="p0 cp">梁冬</p>
 
             <p class="p0 cp">正安中医创始人及董事长、中国实效好中医评选委员会主席、中国传媒大学客座教授</p>
-            <img src="images/jb/ld_1.png"/>
+            <img src="images/jb/ld_1.png" style="width: 483px;height:530px "/>
 
             <p class="p1">
                 梁冬先生以传承中医文化和中国传统文化为使命，创立了正安中医、正安文化及正安生活连锁机构；并且全身心致力于
@@ -96,7 +115,7 @@
             <p class="p0 cp">宋刚</p>
 
             <p class="p0 cp">和顺堂创始人</p>
-            <img src="images/jb/ld_3.jpg"/>
+            <img src="images/jb/ld_3.jpg" style="width: 600px;height:400px "/>
 
             <p class="p1">
                 2005年成立和顺堂医药有限公司。08年成功竞得精品中药饮片生产项目用地。09年与深圳津村董事长中村先生签署了
@@ -108,13 +127,10 @@
             <p class="p0 cp">陆勤超（Cherry Lu）</p>
 
             <p class="p0 cp">红杉资本中国基金副总裁</p>
-            <img src="images/jb/ld_2.jpg"/>
+            <img src="images/jb/ld_2.jpg" style="width: 450px;height:600px "/>
 
             <p class="p1">
-                陆勤超女士一直在医疗领域从事市场及医院项目投资合作工作积累了丰富的行业知识和经验。
-                红杉资本共有近30支基金，拥有近100亿美元总管理资本，曾投资过苹果电脑、思科、甲骨文、雅虎和谷歌、
-                Paypal，红杉资本中国基金以高质量、快速增长的公司为投资目标，并重点关注科技与传媒、消费品及现代服务业、
-                健康产业、能源与环保四个方向。
+                陆勤超女士一直在医疗领域从事市场及医院项目投资合作工作积累了丰富的行业知识和经验。红杉资本共有近30支基金，拥有近100亿美元总管理资本，曾投资过苹果电脑、思科、甲骨文、雅虎和谷歌、Paypal，红杉资本中国基金以高质量、快速增长的公司为投资目标，并重点关注科技与传媒、消费品及现代服务业、健康产业、能源与环保四个方向。
             </p>
         </div>
     </div>
@@ -201,7 +217,10 @@
                             <img src="images/jb/jb_00.png">
                         </div>
                         <div class="info-sm">
-                            <h4>梁冬</h4>
+                            <h4>
+                                <img class="photo-img-m hide" src="images/h_m1.png">
+                                梁冬
+                            </h4>
                             <h5>正安中医创始人及董事长、中国实效好中医评选委员会主席、中国传媒大学客座教授</h5>
 
                             <div class="info-dr sIntro" style="display: none">
@@ -217,7 +236,10 @@
                             <img src="images/jb/jb_01.png">
                         </div>
                         <div class="info-sm">
-                            <h4>宋刚</h4>
+                            <h4>
+                                <img class="photo-img-m hide" src="images/h_m2.png">
+                                宋刚
+                            </h4>
                             <h5>和顺堂创始人</h5>
 
                             <div class="info-dr sIntro" style="display: none">
@@ -234,7 +256,9 @@
                             <img src="images/jb/jb_04.png">
                         </div>
                         <div class="info-sm">
-                            <h4>陆勤超（Cherry Lu）</h4>
+                            <h4>
+                                <img class="photo-img-m hide" src="images/h_m3.png">
+                                陆勤超（Cherry Lu）</h4>
                             <h5>红杉资本中国基金副总裁</h5>
 
                             <div class="info-dr sIntro" style="display: none">
@@ -251,7 +275,9 @@
                             <img src="images/jb/jb_05.png">
                         </div>
                         <div class="info-sm">
-                            <h4>涂志亮</h4>
+                            <h4>
+                                <img class="photo-img-m hide" src="images/h_m4.png">
+                                涂志亮</h4>
                             <h5>固生堂中医董事长兼总裁</h5>
 
                             <div class="info-dr sIntro" style="display: none">
@@ -268,7 +294,9 @@
                             <img src="images/jb/jb_02.png">
                         </div>
                         <div class="info-sm">
-                            <h4>潘学才</h4>
+                            <h4>
+                                <img class="photo-img-m hide" src="images/h_m5.png">
+                                潘学才</h4>
                             <h5>君和堂中医品牌创始人、上海杏和投资管理有限公司总经理</h5>
 
                             <div class="info-dr sIntro" style="display: none">
@@ -285,7 +313,9 @@
                             <img src="images/jb/jb_03.png">
                         </div>
                         <div class="info-sm">
-                            <h4>甘强</h4>
+                            <h4>
+                                <img class="photo-img-m hide" src="images/h_m6.png">
+                                甘强</h4>
                             <h5>把脉云科技(深圳)有限公司 CEO</h5>
 
                             <div class="info-dr sIntro" style="display: none">
@@ -397,27 +427,72 @@
 
 </div>
 <!--返回顶部按钮-->
-<div id="backtotop" style="display: none" class="showme">
+<div id="backtotop" class="hide">
     <div class="bttbg"></div>
 </div>
 
 <script src="js/lib/jquery-1.11.1.min.js"></script>
 <script src="js/lib/jquery.nav.js"></script>
+<!--[if IE 9 ]>
+<script src="js/lib/cav.js"></script>
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/lib/cav.js"></script>
+<!--<![endif]-->
+
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=96daGu8m55b0j43NafMgAFji"></script>
 <script type="text/javascript">
     jQuery(function ($) {
 
+        var ie = function () {
+            var v = 4, //原作者的此处代码是3，考虑了IE5的情况，我改为4。
+                    div = document.createElement('div'),
+                    i = div.getElementsByTagName('i');
+            do {
+                div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->';
+            } while (i[0]);
+            return v > 5 ? v : false; //如果不是IE，之前返回undefined，现改为返回false。
+        }();
 
-        $("#backtotop").bind('click', function () {
+
+
+        function sildeInit(){
+            var $w1 = $("#w1"),
+                    $w2 = $("#w2"),
+                    $w3 = $("#w3");
+            $w1.addClass("animated flipInX").fadeIn();
+            setTimeout(function(){
+                $w2.addClass("animated flipInX").fadeIn();
+            },500);
+            setTimeout(function(){
+                $w3.addClass("animated flipInX zoomIn").fadeIn();
+            },1000);
+        }
+        sildeInit();
+
+
+        if(!ie||ie>8){
+            $("#container").cavBg({
+                colorQueue: [["#f05555", "#B42024"]],
+                enableAnitOut: true,
+                duration: 5000
+            });
+        }
+
+
+
+        var $backtotop =  $("#backtotop");
+        var _right = (document.body.clientWidth-1000)/2-50;
+        $backtotop.bind('click', function () {
             $('body, html').animate({
                 scrollTop: 0
             }, 300, 'swing');
-        });
+        }).css({"right":_right});
         $(window).scroll(function (e) {
             if ($(window).scrollTop() > 200) {
-                $("#backtotop").addClass("showme").show();
+                $backtotop.fadeIn();
             } else {
-                $("#backtotop").removeClass("showme").hide();
+                $backtotop.fadeOut();
             }
         });
 
@@ -431,22 +506,26 @@
             $this.addClass("absolute");
             $this.stop(false, true).animate({
                 top: 0,
-                height: 410
+                height: 410,
+                "padding-top":10
             }, 400);
             setTimeout(function(){
                 $this.find(".sIntro").stop(false, true).animate({
                     opacity: 'show'
                 }, 300);
+                $this.find(".photo-img-m").show();
             },50);
         });
 
         $(".social2").on("mouseleave", "li.social-item .info-sm", function () {
             var $this = $(this);
             setTimeout(function(){
+                $this.find(".photo-img-m").hide();
                 $this.addClass("absolute");
                 $this.stop(false, true).animate({
                     top: 270,
-                    height: 140
+                    height: 140,
+                    "padding-top":20
                 }, 400, function () {
                     $this.removeClass("absolute");
                 });

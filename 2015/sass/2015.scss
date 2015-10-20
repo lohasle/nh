@@ -81,13 +81,22 @@ ul {
   .silder-banner {
     @include container;
     @include clearfix;
-    background: url("../images/banner_00.png") no-repeat center;
     height: 350px;
+    .silder-container{
+      top: 30px;
+      height: 350px;
+      width: 100%;
+      position: absolute;
+    }
     .silder-item {
       width: $main-width;
       height: 350px;
       text-align: center;
       margin: auto;
+      background: url("../images/banner_03.png") no-repeat center;
+      display: table;
+      vertical-align: middle;
+      position: relative;
       > span {
         height: 100%;
         display: inline-block;
@@ -97,6 +106,32 @@ ul {
         height: auto;
         width: 100%;
         vertical-align: middle;
+      }
+    }
+    .wd{
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      .w1{
+        width: 70px;
+        height: 88px;
+        position: absolute;
+        left: 0px;
+        top: 101px;
+      }
+      .w2{
+        width: 92px;
+        height: 72px;
+        position: absolute;
+        left: 95px;
+        top: 107px;
+      }
+      .w3{
+        width: 185px;
+        height: 206px;
+        position: absolute;
+        left: 60px;
+        top: 57px;
       }
     }
   }
@@ -200,12 +235,14 @@ ul {
         }
         .des-body {
           padding-left: 20px;
+          padding-right: 20px;
           font-size: 16px;
           line-height: 1.8rem;
           color: #606060;
           @include container;
           .cp {
-            color: $base_head_Bg;
+//            color: $base_head_Bg;
+            color: #000000;
             font-weight: bold;
           }
 
@@ -343,7 +380,7 @@ ul {
               font-size: 16px;
               line-height: 1.8;
               letter-spacing:2px;
-              padding-top: 20px;
+              padding-top: 15px;
               color: #585858;
               width: 100%;
               text-align: left;
@@ -360,16 +397,21 @@ ul {
                 transition: all 0.3s ease-in-out;
                 &:hover{
                   transition: all 0.3s ease-in-out;
-                  transform: scale(1.15);
+                  transform: scale(1.08);
                 }
               }
+            }
+            .photo-img-m{
+              width: 62px;
+              height: 62px;
+              margin-right: 15px;
+              vertical-align: middle;
             }
           }
         }
 
         .tickets {
           padding: 20px 0;
-          margin-left: -20px;
           height: 165px;
           position: relative;
           .price {
@@ -392,7 +434,7 @@ ul {
 
         /**合作伙伴**/
         .co-author {
-          margin-left: -60px;
+          margin-left: -40px;
           margin-top: 26px;
           margin-bottom: 20px;
           @include clearfix;
@@ -425,6 +467,11 @@ ul {
     background: $base_btn_Bg;
     color: #ffffff;
     @include border-radius(6px);
+    &:hover{
+      background: #fff;
+      color: $base_btn_Bg;
+      border: 1px solid $base_btn_Bg;
+    }
   }
 }
 
@@ -493,21 +540,9 @@ ul {
   height: 50px;
   position: fixed;
   bottom: 55px;
-  right: -60px;
   z-index: 9999;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
-#backtotop.showme {
-  right: 12px;
-  -moz-transform: scale(1) rotate(-360deg) translate(0px);
-  -webkit-transform: scale(1) rotate(-360deg) translate(0px);
-  -o-transform: scale(1) rotate(-360deg) translate(0px);
-  transform: scale(1) rotate(-360deg) translate(0px);
-}
 
 #backtotop .bttbg {
   width: 50px;
