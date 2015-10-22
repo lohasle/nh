@@ -5,3 +5,8 @@
 @import 'susy';
 @import "var";
 .hide{display: none}
+@mixin myfilter($a:0.8){
+  filter:alpha(opacity=$a*100);
+  -moz-opacity:$a;
+  opacity:$a;
+}

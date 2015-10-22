@@ -69,7 +69,7 @@ if (!!document.createElement("canvas").getContext) {
                 zRange: 1,
                 ambient: "#525252",
                 diffuse: "#E4E2E2",
-                speed: 0.0002
+                speed: 0.0001
             };
             var G = {
                 count: 2,
