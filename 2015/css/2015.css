@@ -229,8 +229,8 @@ ul { margin: 0; }
 .pager-content .wd .d { padding-top: 8px; color: #999999; margin: 0; font-size: 18px; }
 .pager-content .wd .d a { color: #999999; }
 
-.pager-foot { color: #878787; background: #e1e5e8; }
-.pager-foot .one { background: #e1e5e8; height: 164px; }
+.pager-foot { color: #878787; background: #333333; }
+.pager-foot .one { height: 164px; }
 .pager-foot .one .content { width: 1000px; margin-left: auto; margin-right: auto; position: relative; height: 164px; }
 .pager-foot .one .content:after { content: " "; display: block; clear: both; }
 .pager-foot .one .content .fl { position: absolute; left: 0; top: 58px; }
@@ -242,12 +242,12 @@ ul { margin: 0; }
 .pager-foot .one .content .fr p { padding: 0; line-height: 1.5; margin: 0; }
 .pager-foot .one .content .fr h5 { padding: 0; font-size: 18px; color: #878787; margin: 0 0 22px; }
 .pager-foot .one .content .fr a { color: #878787; }
-.pager-foot .two { text-align: center; background: #e1e5e8; height: 56px; line-height: 56px; }
+.pager-foot .two { text-align: center; height: 56px; line-height: 56px; }
 
 #backtotop { right: 241.5px; display: block; position: fixed; bottom: 100px; }
 
-#backtotop .bttbg { width: 48px; height: 48px; background: url(../images/gotop.png) no-repeat 0px 0px; }
+#backtotop .bttbg { width: 60px; height: 60px; background: url(../images/go_top.png) no-repeat 0px 0px; }
 
-#backtotop .bttbg:hover { background-position: -48px 0; }
+#backtotop .bttbg:hover { background-position: -62px 0; }
 
 /*# sourceMappingURL=2015.css.map */
