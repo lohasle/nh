@@ -206,8 +206,8 @@ ul { margin: 0; }
 .pager-content .pager-main .pager-main-container .des-item .social2 .social-item .photo-img img { vertical-align: middle; height: 270px; width: 100%; transition: all 0.3s ease-in-out; }
 .pager-content .pager-main .pager-main-container .des-item .social2 .social-item .photo-img img:hover { transition: all 0.3s ease-in-out; transform: scale(1.08); }
 .pager-content .pager-main .pager-main-container .des-item .social2 .social-item .photo-img-m { width: 62px; height: 62px; margin-right: 15px; vertical-align: middle; }
-.pager-content .pager-main .pager-main-container .des-item .tickets { padding-top: 20px; height: 120px; position: relative; }
-.pager-content .pager-main .pager-main-container .des-item .tickets .price { position: absolute; left: 0; color: #000000; }
+.pager-content .pager-main .pager-main-container .des-item .tickets { padding-top: 20px; }
+.pager-content .pager-main .pager-main-container .des-item .tickets .price { color: #000000; }
 .pager-content .pager-main .pager-main-container .des-item .tickets .price .c1 { color: #009fff; }
 .pager-content .pager-main .pager-main-container .des-item .tickets .price .c2 { color: #ef3f2d; }
 .pager-content .pager-main .pager-main-container .des-item .tickets .btn-buy { position: absolute; right: 0; bottom: 55px; }
